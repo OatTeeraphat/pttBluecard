@@ -1,0 +1,474 @@
+.activity-head {
+    position: relative;
+    text-align: left;
+    max-height: 80px;
+    picture {
+        img {
+            width: 100%;
+        }
+    }
+    .header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        .title {
+            text-align: center;
+            h1 {
+                margin-top: 50px;
+                font-family: $font1;
+                font-size: 36px;
+                color: $white;
+            }
+        }
+    }
+}
+
+.activity {
+	.row {
+        .content {
+            .featured {
+                position: relative;
+                background-color: $color13;
+                .row {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    .item {
+                        padding-left: 0;
+                        padding-right: 0;
+                        .image {
+                            position: relative;
+                            img {
+                                width: 100%;
+                            }
+                            .curve {
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                height: 15px;
+                                background-color: $color13;
+                                -moz-border-radius-topleft: 50% 15px;
+                                border-top-left-radius: 50% 15px;
+                                -moz-border-radius-topright: 50% 15px;
+                                border-top-right-radius: 50% 15px;
+                            }
+                        }
+                        .desc {
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            height: 400px;
+                            h3 {
+                                height: 33px;
+                                overflow: hidden;
+                                margin-top: 0;
+                                font-family: $font1;
+                                font-size: 24px;
+                                color: $color14;
+                            }
+                            h4 {
+                                height: 66px;
+                                overflow: hidden;
+                                margin-top: 15px;
+                                font-family: $font1;
+                                font-size: 24px;
+                                color: $color14;
+                            }
+                            span {
+                                color: $color14;
+                            }
+                            time {
+                                display: block;
+                                padding-top: 10px;
+                                color: $color14;
+                            }
+                            p {
+                                margin-bottom: 0;
+                                padding-top: 10px;
+                                color: $white;
+                            }
+                        }
+                        .brand {
+                            margin-top: 20px;
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            position: relative;
+                            .image {
+                                display: inline-block;
+                                width: 28%;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .title {
+                                display: inline-block;
+                                padding-left: 5px;
+                                width: 70%;
+                                vertical-align: top;
+                                font-family: $font1;
+                                font-size: 24px;
+                                color: $color17;
+                            }
+                        }
+                        &:nth-child(3n+1) {
+                            clear: both;
+                        }
+                        .points {
+                            padding-top: 10px;
+                            padding-left: 0;
+                            padding-right: 0;
+                            padding-bottom: 50px;
+                            text-align: center;
+                            p {
+                                font-family: $font1;
+                                font-size: 30px!important;
+                                margin-bottom: 0;
+                                color: $color14;
+                            }
+                            span {
+                                display: block;
+                                color: $white;
+                            }
+                            a, .button {
+                                clear: both;
+                                display: inline-block;
+                                margin-top: 20px;
+                                padding-top: 8px;
+                                padding-bottom: 5px;
+                                background-color: $color1;
+                                font-family: $font1;
+                                font-size: 21px;
+                                line-height: 24px;
+                                @include radius(5px);
+                                &.sold-out {
+                                    background-color: transparent;
+                                    pointer-events: none;
+                                    color: $red;
+                                    border: 1px solid $white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .bottom-curve {
+                    position: absolute;
+                    bottom: -25px;
+                    width: 100%;
+                    height: 25px;
+                    background-color: $color13;
+                    -moz-border-radius-bottomleft: 50% 25px;
+                    border-bottom-left-radius: 50% 25px;
+                    -moz-border-radius-bottomright: 50% 25px;
+                    border-bottom-right-radius: 50% 25px;
+                }
+            }
+            .feature-img {
+                position: relative;
+                .curve {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 15px;
+                    background-color: $color8;
+                    -moz-border-radius-topleft: 50% 25px;
+                    border-top-left-radius: 50% 25px;
+                    -moz-border-radius-topright: 50% 25px;
+                    border-top-right-radius: 50% 25px;
+                }
+            }
+            .activity-gallery {
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: $color15;
+                -webkit-border-bottom-right-radius: 50px;
+                -webkit-border-bottom-left-radius: 50px;
+                -moz-border-radius-bottomright: 50px;
+                -moz-border-radius-bottomleft: 50px;
+                border-bottom-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+                h3 {
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    padding-top: 50px;
+                    font-family: $font1;
+                    font-size: $size3;
+                    color: $color14;
+                }
+                ul {
+                    list-style: none;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    margin-bottom: 0;
+                    li {
+                        padding-left: 0;
+                        padding-right: 0;
+                        padding-bottom: 30px;
+                        .image {
+                            position: relative;
+                            a {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .curve {
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                height: 15px;
+                                background-color: $color15;
+                                -moz-border-radius-topleft: 50% 15px;
+                                border-top-left-radius: 50% 15px;
+                                -moz-border-radius-topright: 50% 15px;
+                                border-top-right-radius: 50% 15px;
+                            }
+                        }
+                        .title {
+                            height: 66px;
+                            text-align: center;
+                            h3 {
+                                margin-top: 0;
+                                padding-top: 0;
+                                a {
+                                    display: block;
+                                    font-size: 24px;
+                                    color: $color14;
+                                }
+                            }
+                            span {
+                                margin-right: 10px;
+                                padding: 10px 14px;
+                                background-color: $color9;
+                                font-size: 30px;
+                                color: $white;
+                                @include radius(5px);
+                            }
+                            .image {
+                                text-align: center;
+                            }
+                        }
+                        .icon {
+                            display: block;
+                            padding: 10px 0 0;
+                            text-align: center;
+                            width: 100%;
+                            text-align: center;
+                            span {
+                                padding: 10px;
+                                font-size: 30px;
+                                border: 1px solid $white;
+                                color: $white;
+                                @include radius(50%);
+                            }
+                        }
+                        &:nth-child(3n+1) {
+                            clear: both;
+                        }
+                        &:last-child {
+                            float: left;
+                            border: 0;
+                            margin-bottom: 0;
+                            padding-bottom: 50px;
+                        }
+                    }
+                }
+                p {
+                    display: inline-block;
+                    margin-bottom: 0;
+                    padding-bottom: 20px;
+                    font-family: $font1;
+                    font-size: $size1;
+                    color: $color9;
+                    span {
+                        color: $color1;
+                    }
+                }
+            }
+
+            .load-more {
+                    padding-bottom: 30px;
+                    text-align: center;
+                    .column {
+                        a {
+                            display: block;
+                            font-family: $font1;
+                            font-size: 30px;
+                            line-height: 24px;
+                            color: $color14;
+                        }
+                        span {
+                            display: block;
+                            padding-top: 10px;
+                            font-size: 30px;
+                            color: $color14;
+                        }
+                    }
+                }
+            &:after {
+                content: " ";
+                display: table;
+                margin: 0 auto 30px;
+                background: url('../img/ft-act.png');
+                width: 429px;
+                height: 183px;
+                position: relative;
+                top: -1px;
+            }
+        }
+	}
+}
+
+.activity .reg .row .content::after {
+    display: none;
+}
+
+.point__button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 40em) {
+
+    .activity-head {
+        max-height: 60px;
+        .header {
+            margin: 0;
+            .title {
+                h1 {
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+
+    .activity {
+        .row {
+            .content {
+                .featured {
+                    .row {
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        .item {
+                            .desc {
+                                padding-top: 10px;
+                                h3 {
+                                    font-size: 30px;
+                                    line-height: 34px;
+                                }
+                                h4 {
+                                    font-size: 30px;
+                                    line-height: 34px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:after {
+                    background: url("../img/ft-act-s.png");
+                    width: 219px;
+                    height: 93px;
+                }
+            }
+        }
+    }
+
+    .activity .row .content .featured .row .item .desc {
+        height: auto;
+    }
+
+    .point__button {
+        position: static;
+    }
+    
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    
+    .activity-head {
+        max-height: 60px;
+        .header {
+            .title {
+                h1 {
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+
+
+    .activity .row .content .featured .row .item .desc {
+        height: auto;
+    }
+
+    .point__button {
+        position: static;
+    }
+
+}
+
+
+
+/*@media only screen and (min-width: 640px) and (max-width: 768px) {*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+    .activity {
+        .row {
+            .content {
+                .featured {
+                    .row {
+                        .item {
+                            width: 50%;
+                            &:nth-child(3n+1) {
+                                clear: inherit;
+                            }
+                            &:nth-child(2n+1) {
+                                clear: both;
+                                float: left;
+                            }
+                        }
+                    }
+                }
+                .activity-gallery {
+                    ul {
+                        li {
+                            width: 50%;
+                            &:nth-child(3n+1) {
+                                clear: inherit;
+                            }
+                            &:nth-child(2n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+    .activity {
+        .row {
+            .content {
+                .featured {
+                    .row {
+                        .item {
+                            width: 33.33333%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.msie .activity .row .content .featured .bottom-curve {
+    bottom: -24px;
+}

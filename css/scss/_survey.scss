@@ -1,0 +1,588 @@
+.survey-head {
+    position: relative;
+    text-align: left;
+    picture {
+        img {
+            width: 100%;
+        }
+    }
+    .header {
+        // position: absolute;
+        margin: 0;
+        top: 0;
+        width: 100%;
+        .title {
+            float: left;
+            h1 {
+                margin-left: 15px;
+                margin-top: 50px;
+                font-family: $font1;
+                color: $color1;
+            }
+        }
+        .dropdown {
+            float: right;
+            text-align: right;
+            .search {
+                margin-top: 55px;
+                form.custom .custom.dropdown {
+                    height: 45px;
+                }
+                form.custom .custom.dropdown {
+                    padding-top: 5px;
+                }
+                form.custom .custom.dropdown .selector {
+                    top: 5px;
+                }
+                .button {
+                    height: 45px;
+                    margin-top:25px; 
+                }
+                select {
+                    padding: 0 0.5rem;
+                    margin-bottom: 0;
+                    font-family: $font1;
+                    font-size: 20px;
+                    border: 0;
+                    background-color: $white;
+                    color: $color1;
+                    @include radius(5px);
+                }
+            }
+        }
+    }
+}
+
+.survey-page {
+	.row {
+        .content {
+            .survey-detail {
+                padding-top: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: $white;
+                h3 {
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    padding-top: 15px;
+                    font-family: $font1;
+                    font-size: $size3;
+                    color: $color1;
+                }
+                ul {
+                    list-style: none;
+                    margin-left: 0;
+                    margin-bottom: 0;
+                    li {
+                        padding-bottom: 30px;
+                        margin-bottom: 30px;
+                        border-bottom: 1px solid $color29;
+                        .title {
+                            span {
+                                margin-right: 10px;
+                                padding: 5px 15px;
+                                background-color: $color11;
+                                font-size: 36px;
+                                color: $white;
+                                @include radius(10px);
+                            }
+                            .image {
+                                text-align: center;
+                            }
+                            ul {
+                                margin-left: 90px;
+                                list-style: none;
+                                li {
+                                    margin-bottom: 0;
+                                    padding-bottom: 0;
+                                    border: 0;
+                                }
+                                &.satis {
+                                    margin-left: 70px;
+                                    li {
+                                        display: inline-block;
+                                        a {
+                                            display: inline-block;
+                                            width: 90px;
+                                            text-align: center;
+                                            span {
+                                                display: inline-block;
+                                                margin: 0 auto 5px;
+                                                padding: 5px 20px;
+                                                background-color: $white;
+                                                color: $color30;
+                                                border: 2px solid $color30;
+                                                height: 70px;
+                                                width: 70px;
+                                                text-align: center;
+                                                @include radius(50%);
+                                                @include animated(0.33s);
+                                            }
+                                            p {
+                                                display: block;
+                                                text-align: center;
+                                                font-size: 20px;
+                                            }
+                                            &:hover {
+                                                span {
+                                                    background-color: $color30;
+                                                    color: $white;
+                                                }
+                                            }
+                                        }
+                                        &.active {
+                                            a {
+                                                span {
+                                                    background-color: $color30;
+                                                    color: $white;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .form-area {
+                                padding-left: 75px;
+                                textarea {
+                                    width: 500px;
+                                    height: 100px;
+                                    font-family: $font1;
+                                    font-size: 20px;
+                                    color: $color11;
+                                    border: 2px solid $color11;
+                                    box-shadow: inherit;
+                                    @include radius(5px);
+
+                                    &::-webkit-input-placeholder {
+                                       color: $color34;
+                                    }
+
+                                    &:-moz-placeholder {
+                                       color: $color34;  
+                                    }
+
+                                    &::-moz-placeholder {
+                                       color: $color34;  
+                                    }
+
+                                    &:-ms-input-placeholder {  
+                                       color: $color34;  
+                                    }
+                                }
+                            }
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                            padding-bottom: 20px;
+                        }
+                    }
+                }
+                p {
+                    display: inline-block;
+                    margin-bottom: 0;
+                    padding-bottom: 20px;
+                    font-family: $font1;
+                    font-size: $size1;
+                    color: $color18;
+                    span {
+                        color: $color1;
+                    }
+                }
+                .form-ui {
+                    ul {
+                        li {
+                            font-family: $font1;
+                            font-size: 20px;
+                            line-height: 2;
+                            label {
+                                margin-right: 5px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                .load-more {
+                    padding-top: 40px;
+                    padding-bottom: 10px;
+                    text-align: center;
+                    .column {
+                        a {
+                            display: block;
+                            font-family: $font1;
+                            font-size: 24px;
+                            line-height: 20px;
+                            color: $color14;
+                        }
+                        span {
+                            display: block;
+                            padding-top: 5px;
+                            padding-bottom: 0px;
+                            font-size: 24px;
+                            color: $color14;
+                            border-bottom: 1px solid $white;
+                        }
+                    }
+                }
+            }
+            .submit {
+                position: relative;
+                padding-top: 70px;
+                padding-bottom: 30px;
+                background-color: $color8;
+                -webkit-border-bottom-right-radius: 50px;
+                -webkit-border-bottom-left-radius: 50px;
+                -moz-border-radius-bottomright: 50px;
+                -moz-border-radius-bottomleft: 50px;
+                border-bottom-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+                .curve {
+                    position: absolute;
+                    top: -25px;
+                    width: 100%;
+                    height: 25px;
+                    background-color: $color8;
+                    -moz-border-radius-topleft: 50px 25px;
+                    border-top-left-radius: 50% 25px;
+                    -moz-border-radius-topright: 50px 25px;
+                    border-top-right-radius: 50% 25px;
+                }
+                .curve-down {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 25px;
+                    background-color: $white;
+                    -moz-border-radius-bottomleft: 50px 25px;
+                    border-bottom-left-radius: 50% 25px;
+                    -moz-border-radius-bottomright: 50px 25px;
+                    border-bottom-right-radius: 50% 25px;
+                    z-index: 1;
+                }
+                .submit-btn {
+                    .row {
+                        text-align: center;
+                        div.column {
+                            button {
+                                margin-left: 10px;
+                                margin-right: 10px;
+                            }
+                            button[type=submit] {
+                                width: 140px;
+                                padding: 13px 20px 10px;
+                                background-color: $color1;
+                                border: 2px solid $color1;
+                                border-radius: 15px;
+                                font-family: $font1;
+                                font-size: 26px;
+                                color: $white;
+                                line-height: 18px;
+                                letter-spacing: 0;
+                                box-shadow: none;
+                                @include radius(5px);
+                            }
+                            button[type=reset] {
+                                width: 140px;
+                                padding: 13px 20px 10px;
+                                background-color: transparent;
+                                border: 2px solid $color1;
+                                border-radius: 15px;
+                                font-family: $font1;
+                                font-size: 26px;
+                                color: $color1;
+                                line-height: 18px;
+                                letter-spacing: 0;
+                                box-shadow: none;
+                                @include radius(5px);
+                            }
+                        }
+                        .center {
+                            text-align: center;
+                        }
+                    }
+                }
+                &.short {
+                    padding-top: 0;
+                }
+            }
+            &:after {
+                content: " ";
+                display: table;
+                float: right;
+                margin-right: 150px;
+                margin-bottom: 30px;
+                background: url('../img/ft-about-apply.png');
+                width: 429px;
+                height: 183px;
+                position: relative;
+                top: -1px;
+            }
+        }
+	}
+}
+
+.fgf {
+    .survey-detail {
+        padding-top: 0!important;
+    }
+    h1 {
+        margin: 0;
+        font-family: $font1;
+        font-size: 40px;
+        color: $color1;
+    }
+    h3 {
+        padding-top: 0!important;
+        margin-bottom: 0!important;
+        font-size: 34;
+    }
+    h4 {
+        font-family: $font1;
+        font-size: 28px;
+        color: $color1;
+    }
+    .fgf-head {
+        max-height: 80px;
+    }
+    p {
+        .no-pad {
+            padding-bottom: 0!important;
+        }
+    }
+    ul {
+        padding-left: 15px;
+        padding-bottom: 15px;
+        list-style: disc!important;
+        li {
+            margin-bottom: 0!important;
+            padding-bottom: 0!important;
+            border-bottom: 0!important;
+        }
+    }
+    .submit-btn {
+        padding-bottom: 15px;
+    }
+}
+
+.survey-headbrand {
+    padding: 0 30px;
+    padding-bottom: 60px;
+    background: $color37;
+    font-family: supermarketreg;
+    position: relative;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: supermarketreg;
+    }
+
+    .curve {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        height: 25px;
+        background-color: #FFF;
+        border-top-left-radius: 50% 25px;
+        border-top-right-radius: 50% 25px;
+    }
+}
+
+.survey-headcontent {
+    margin-top: -40px;
+
+    h1 {
+        font-size: 2.4rem;
+        margin-top: 15px;
+        line-height: 1;
+        color: $color1;
+    }
+
+    p {
+        font-size: 2rem;
+        line-height: 1;
+        color: $color34;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .survey-head {
+        .header {
+            .title {
+                h1 {
+                    margin-top: 30px;
+                    margin-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .survey-head picture {
+        display: block;
+        overflow: hidden;
+        height: 80px;
+    }
+    .survey-headcontent {
+        img {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            margin-bottom: 0;
+        }
+    }
+    .survey-page {
+        .row {
+            .content {
+                .survey-detail {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    h3 {
+                        margin-bottom: 0;
+                        text-align: center;
+                    }
+                    ul {
+                        li {
+                            .title {
+                                span {
+                                    margin: 10px auto;
+                                    display: table;
+                                    background-color: $color11;
+                                }
+                                ul {
+                                    margin-left: 15px;
+                                    li {
+                                        font-size: 24px;
+                                        label {
+                                            font-size: 24px;
+                                            &.think {
+                                                display: inline;
+                                                width: auto;
+                                                line-height: 1;
+                                            }
+                                        }
+                                    }
+                                    &.satis {
+                                        margin-left: 10px;
+                                        li {
+                                            width: 100%;
+                                            a {
+                                                width: 100%;
+                                                text-align: left;
+                                                span {
+                                                    margin: 0 0 5px;
+                                                }
+                                                p {
+                                                    padding-left: 10px;
+                                                    display: inline-block;
+                                                    width: 70%;
+                                                    font-size: 22px;
+                                                    text-align: left;
+                                                    color: $color18;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .form-area {
+                                    padding-left: 10px;
+                                }
+                            }
+                        }
+                        &.firsttime {
+                            li {
+                                .title {
+                                    p {
+                                        padding-left: 0;
+                                        text-align: center;
+                                        span {
+                                            position: inherit;
+                                            display: table;
+                                        }
+                                    }
+                                    ul {
+                                        li {
+                                            span {
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        padding-top: 10px;
+                        width: 100%;
+                        line-height: 34px;
+                        text-align: center;
+                        color: $color30;
+                        small {
+                            display: block;
+                            color: $color18;
+                        }
+                    }
+                    &.about-firsttime-detail {
+                        p {
+                            text-align: left;
+                        }
+                    }
+                    &.about-apply-cpoints {
+                        ul {
+                            li {
+                                .row {
+                                    .image {
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                    .title {
+                                        p {
+                                            margin-left: 0;
+                                            padding-top: 40px;
+                                            padding-bottom: 10px;
+                                            text-align: left;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .submit {
+                    .submit-btn {
+                        .row {
+                            margin: 0;
+                        }
+                    }
+                }
+                &:after {
+                    background: url("../img/ft-about-apply-s.png");
+                    margin: 0 auto;
+                    float: none;
+                    width: 133px;
+                    height: 56px;
+                }
+            }
+        }
+    }
+
+    .survey-page .row .content .survey-detail ul li .title span {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .survey-head picture {
+        display: block;
+        overflow: hidden;
+        height: 100px;
+    }
+
+    .survey-headbrand {
+        padding-bottom: 60px;
+    }
+}

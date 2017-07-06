@@ -1,0 +1,27 @@
+button[type=submit]:hover {
+    color: #2270bb !important;
+    background-color: #fff !important;
+    border: 2px solid #fff !important;
+}
+button[type=reset]:hover {
+    border: 2px solid #58585b !important;
+    color: #58585b !important;
+}
+.termHead {position:relative;height: 350px !important;}
+.termHead .rsOverflow{height: 300px !important;}
+.term-head .header .title h1{ color: #565656 !important; }
+.term-head .header .title span{ margin-left: 25px; }
+.termContent .row .content form .detail ol {color: #565656;}
+.termContent .row .content form .detail li {padding-left: 2.5%;margin-bottom: 1.25em;}
+.terms-reg{margin-top: -150px !important;}
+
+@media only screen and (max-width: 40em){
+	.term-head picture img {max-height: 125px;}
+    .register .row .content form .detail {padding: 0 25px 0 15px;}
+    .term-head {margin-top: -5%;max-height: 110px;}
+    .term-head .header .title{margin-top: 15px;}
+    .term-head .header .title h1{ top:inherit; bottom: 50%;}
+    .termContent .row .content form .detail li p {font-size: 1.1em;}
+    .term-submit .column label {padding-bottom: 7em;}
+    .term-submit .column .desc p {font-size: 1em !important;margin-bottom: 5px !important;}
+}

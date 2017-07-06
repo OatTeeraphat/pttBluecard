@@ -1,0 +1,443 @@
+.headline {
+	.row {
+		.head {
+			text-align: center;
+			font-family: $font1;
+			font-size: 50px;
+            font-weight: normal;
+			color: $white;
+		}
+	}
+}
+
+.about .feature-img .curve {
+    display: block;
+}
+
+.about-head {
+    position: relative;
+    text-align: left;
+    picture {
+        img {
+            width: 100%;
+        }
+    }
+    .header {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        width: 100%;
+        .title {
+            float: left;
+            h1 {
+                margin-left: 40px;
+                margin-top: 50px;
+                font-family: $font1;
+                color: $color1;
+            }
+        }
+        .dropdown {
+            float: right;
+            text-align: right;
+            .search {
+                margin-top: 55px;
+                form.custom .custom.dropdown {
+                    height: 45px;
+                }
+                form.custom .custom.dropdown {
+                    padding-top: 5px;
+                }
+                form.custom .custom.dropdown .selector {
+                    top: 5px;
+                }
+                .button {
+                    height: 45px;
+                    margin-top:25px; 
+                }
+                select, .selectordie-wrap {
+                    padding: 0 0.5rem;
+                    margin-bottom: 0;
+                    font-family: $font1;
+                    font-size: 20px;
+                    border: 0;
+                    background-color: $white;
+                    line-height: 30px;
+                    color: $color1;
+                    @include radius(5px);
+                }
+                .selectordie-wrap {
+                    padding: 0;
+                    border-radius: 5px;
+
+                    .sod_select  {
+                        border: 0;
+                        border-radius: 5px;
+                        padding: 10px;
+                    }
+
+                    .sod_select::before {
+                        top: 10px;
+                    }
+
+                    .sod_list_wrapper {
+                        border: 0;
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about {
+	.row {
+        .content {
+            .feature-img {
+                .curve {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 25px;
+                    background-color: $color8;
+                    -moz-border-radius-topleft: 50px 25px;
+                    border-top-left-radius: 50% 25px;
+                    -moz-border-radius-topright: 50px 25px;
+                    border-top-right-radius: 50% 25px;
+                }
+            }
+            .about-detail {
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: $color8;
+                h3 {
+                    margin-top: 0;
+                    padding-top: 15px;
+                    font-family: $font1;
+                    font-size: $size3;
+                    color: $color1;
+                }
+                p {
+                    margin-bottom: 0;
+                    padding-bottom: 20px;
+                    font-family: $font1;
+                    font-size: $size1;
+                    // color: $color9;
+                    color: $color34;
+                    line-height: 1.3;
+                    span {
+                        color: $color1;
+                    }
+                }
+                .app-title {
+                    padding-top: 90px;
+                    text-align: center;
+                }
+                .app {
+                    padding-bottom: 80px;
+                    padding-top: 10px;
+                    .app-store {
+                        /*padding-right: 30px;
+                        text-align: right;*/
+                    }
+                    .play-store {
+                        /*padding-left: 30px;
+                        text-align: left;*/
+                    }
+                }
+            }
+            .about-privilege {
+                position: relative;
+                padding-bottom: 30px;
+                background-color: $color10;
+                -webkit-border-bottom-right-radius: 50px;
+                -webkit-border-bottom-left-radius: 50px;
+                -moz-border-radius-bottomright: 50px;
+                -moz-border-radius-bottomleft: 50px;
+                border-bottom-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+                .curve {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 25px;
+                    background-color: $color8;
+                    -moz-border-radius-bottomleft: 50px 25px;
+                    border-bottom-left-radius: 50% 25px;
+                    -moz-border-radius-bottomright: 50px 25px;
+                    border-bottom-right-radius: 50% 25px;
+                }
+                .row {
+                    margin: 0;
+                }
+                h3 {
+                    padding: 40px 30px 20px;
+                    margin-top: 0;
+                    font-family: $font1;
+                    font-size: $size3;
+                    color: $white;
+                }
+                ul {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    list-style: none;
+                    margin-left: 0;
+                    li {
+                        padding-bottom: 20px;
+                        .icon {
+                            padding-left: 1rem;
+                            float: left;
+
+                            span {
+                                display: inline-block;
+                                padding: 10px;
+                                font-size: 50px;
+                                color: $white;
+                                border: 2px solid $white;
+                                @include radius(50%);
+                            }
+                        }
+                        .title {
+                            font-size: $size2;
+                            color: $white;
+                            margin-left: 110px;
+                        }
+                        &:nth-child(odd) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+            &:after {
+                content: " ";
+                display: table;
+                float: right;
+                margin-right: 150px;
+                margin-bottom: 30px;
+                background: url('../img/ft-about-privilege.png');
+                width: 429px;
+                height: 183px;
+            }
+            &.about-app {
+                .about-detail {
+                    -webkit-border-bottom-right-radius: 50px;
+                    -webkit-border-bottom-left-radius: 50px;
+                    -moz-border-radius-bottomright: 50px;
+                    -moz-border-radius-bottomleft: 50px;
+                    border-bottom-right-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                }
+                &:after {
+                    background: url('../img/ft-about-apply.png');
+                    width: 429px;
+                    height: 183px;
+                }
+            }
+        }
+	}
+}
+
+.about .row .content .about-detail {
+    padding-top: 15px;
+}
+
+.about-faq .reg .row .content::after {
+    display: none;
+}
+
+.about .row .content .about-privilege .privi-list ul li {
+    overflow: hidden;
+}
+
+.about .reg .row .content::after {
+    display: none;
+}
+
+.app-store, .play-store {
+    img {
+        max-height: 130px;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .about-head {
+        max-height: 134px;
+        .header {
+            .dropdown {
+                .search {
+                    margin-top: 30px;
+                }
+            }
+            .title {
+                h1 {
+                    margin-top: 15px;
+                    margin-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .about {
+        .row {
+            .head {
+                max-height: 130px;
+                .header {
+                    .title {
+                        float: none;
+                        text-align: center;
+                        h1 {
+                            margin-left: 10px;
+                            margin-top: 10px;
+                        }
+                    }
+                    .dropdown {
+                        float: none;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        .search {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+            .content {
+                .about-detail {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    p {
+                        line-height: 34px;
+                    }
+                    .app {
+                        .app-store {
+                            padding-right: 15px;
+                            padding-bottom: 20px;
+                            text-align: center;
+                        }
+                        .play-store {
+                            padding-left: 15px;
+                            padding-bottom: 20px;
+                            text-align: center;
+                        }
+                        .qrcode {
+                            text-align: center;
+                        }
+                    }
+                }
+                .about-privilege {
+                    .privi-list {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                    h3 {
+                        padding: 40px 15px 20px;
+                        font-size: 32px;
+                        text-align: center;
+                    }
+                    ul {
+                        margin: 0;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        li {
+                            padding-left: 0;
+                            padding-right: 0;
+                            .icon {
+                                padding-left: 0;
+                                padding-right: 0;
+                            }
+                            .title {
+                                margin-left: 100px;
+                            }
+                        }
+                    }
+                }
+                &:after {
+                    background: url("../img/ft-about-s.png");
+                    margin: 0 auto;
+                    float: none;
+                    width: 133px;
+                    height: 56px;
+                }
+                &.about-app {
+                    &:after {
+                        background: url("../img/ft-about-apply-s.png");
+                        margin: 0 auto;
+                        float: none;
+                        width: 133px;
+                        height: 56px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about .row .content .about-detail p,
+    .about-apply .row .content .about-apply-detail p {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .about .more-promo {
+        margin-top: 20px;
+    }
+
+    .about .row .content .about-detail .app {
+        padding-top: 40px;
+    }
+
+    .about.about .row .content .feature-img .curve {
+        height: 15px;
+        border-top-left-radius: 50% 15px;
+        border-top-right-radius: 50% 15px;
+    }
+
+    .about .row .content .about-detail h3 {
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+    .about-head .header {
+
+        .dropdown {
+            padding-right: 2.79rem;
+        }
+    }
+
+    .about .row .content .about-detail p {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .about-head .header .title h1 {
+        margin-top: 32px;
+        margin-left: 20px;
+    }
+
+    .about-head picture:after {
+        content: '';
+        background: #E6E6E6;
+        width: 100%;
+        height: 150px;
+        display: block;
+    }
+
+    .about .row .content .about-detail .app {
+        padding-top: 40px;
+    }
+
+    .about .about-head {
+        overflow: visible;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 640px) {
+    .about-head .header {
+        .dropdown {
+            padding-right: 2.79rem
+        }
+    }
+}
+
+.msie .about .row .content:after {
+    margin-top: -1px;
+}

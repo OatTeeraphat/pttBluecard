@@ -1,0 +1,117 @@
+input::-webkit-input-placeholder {
+   line-height: 1;
+}
+
+/* Top Bar - Windows Fix */
+.top-bar .button {
+  height: auto;
+  line-height: 1;
+  padding-top: 5px;
+}
+
+/* Search Box Safari Fix */
+/* Add class="searchbox-fix" to <input> */
+.safari .searchbox-fix::-webkit-input-placeholder {
+  line-height: 1.5;
+  position: relative;
+}
+
+.chrome .searchbox-fix::-webkit-input-placeholder {
+  line-height: 1.5;
+  position: relative;
+}
+
+/* Fix for text input like login popup */
+/* Add class="textbox-fix" to <input */
+.safari, .chrome, .firefox {
+  .textbox-fix {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &::-webkit-input-placeholder {
+      line-height: 1.5;
+      position: relative;
+    }
+  }
+}
+
+/* Select or die wrapper */
+.sod-noborder {
+  .sod_select {
+    border: 0 !important;
+  }
+
+  .sod_list_wrapper {
+    border: 0 !important;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 40.063em) {
+  .sod-margin {
+    margin-bottom: 10px;
+  }
+
+  .break--nomobile {
+    display: none;
+  }
+}
+
+
+/* Fix for Input */
+#subscribeemail {
+  height: auto;
+}
+
+/* Curve Fix */
+.msie .curve-up {
+  top: -1px !important;
+}
+
+.msie .curve-up2 {
+  top: -2px !important;
+}
+
+/* Image Frame */
+.imgframe {
+  display: block;
+  height: 235px;
+  overflow: hidden;
+  position: relative;
+  background-color:#000;
+}
+
+.imgframe img {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 800px) {
+  .imgframe {
+      height: auto;
+  }
+  .imgframe img {
+      position: static;
+      -webkit-transform: none;
+      transform: none;
+  }
+}
+
+/* Radio Row */
+.form-radio {
+
+  label {
+    color: #fff;
+  }
+
+  input {
+    margin-bottom: 0;
+  }
+
+  .reg-modal .content .inside.contact .form & {
+    margin: 15px 0;
+  }
+  
+}

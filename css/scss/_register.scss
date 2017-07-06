@@ -1,0 +1,1504 @@
+.reg-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    vertical-align: middle;
+    overflow: overlay;
+    .exit {
+        z-index: 1;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        span {
+            font-size: 32px;
+            color: $white;
+        }
+    }
+    .content {
+        display: table-cell;
+        vertical-align: middle;
+        .inside {
+            margin: 0 auto;
+            max-width: 550px;
+            h3 {
+                margin: 0;
+                padding: 0;
+                font-family: $font1;
+                font-size: 50px;
+                color: $white;
+            }
+            p {
+                margin: 0;
+                padding: 0;
+                font-family: $font1;
+                font-size: 30px;
+                color: $white;
+                img {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                }
+                &.space {
+                    margin-bottom: 10px;
+                }
+            }
+            input[type="text"], input[type="password"] {
+                width: 320px;
+                margin: 0 auto;
+                //font-family: $font1;
+                font-size: 16px;
+                line-height: 24px;
+                @include radius(5px);
+            }
+            textarea {
+                width: 320px;
+                height: 100px;
+                margin: 0 auto;
+                //font-family: $font1;
+                font-size: 16px;
+                line-height: 24px;
+                @include radius(5px);
+            }
+            .sod_select {
+                font-size: 16px;
+                .sod_label {
+                    color: $black;
+                }
+                .sod_placeholder {
+                    color: $color27;
+                }
+                &:before {
+                    color: $black;
+                }
+            }
+            .button {
+                padding: 13px 0 10px;
+                width: 170px;
+                background-color: $color1;
+                border: 2px solid $color1;
+                font-family: $font1;
+                font-size: 26px;
+                color: $white;
+                line-height: 18px;
+                letter-spacing: 0;
+                box-shadow: none;
+                @include radius(5px);
+                &.edit-email {
+                    padding: 13px 20px 10px;
+                }
+                &.enter-modal {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                &.login-modal {
+                    padding: 13px 20px 10px;
+                    width: auto;
+                }
+                &.cancel-modal {
+                    margin-left: 10px;
+                    background-color: transparent;
+                    border: 2px solid $white;
+                }
+                &.forgot-pwd {
+                    margin-left: 20px;
+                    width: auto;
+                    padding: 0;
+                    background-color: transparent;
+                    border: 0;
+                    font-family: $font1;
+                }
+            }
+            &.sitemap {
+                max-width: 900px;
+                .menu {
+                    p {
+                        font-size: inherit;
+                        text-align: left;
+                        a {
+                            display: block;
+                            padding-left: 10px;
+                            font-size: 21px;
+                            color: $white;
+                            @include animated(0.33s);
+                            &:hover {
+                                background-color: $color11;
+                            }
+                        }
+                        &.active {
+                            background-color: $color11;
+                        }
+                    }
+                    ul {
+                        margin-left: 2.1rem;
+                        text-align: left;
+                        list-style-position: outside;
+                        color: $white;
+                        li {
+                            a {
+                                display: block;
+                                padding: 5px 10px;
+                                font-family: $font1;
+                                font-size: 18px;
+                                line-height: 20px;
+                                color: $white;
+                                @include animated(0.33s);
+                                &:hover {
+                                    background-color: $color11;
+                                }
+                            }
+                            &.active {
+                                background-color: $color11;
+                            }
+                        }
+                    }
+                }
+            }
+            &.contact {
+                .title {
+                    p {
+                        font-size: 24px;
+                        line-height: 32px;
+                        &.contact-tel {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    span {
+                        font-family: $font1;
+                        font-size: 40px;
+                        color: $white;
+                    }
+                    i {
+                        margin-left: -48px;
+                        padding-right: 5px;
+                        color: $white;
+                    }
+                }
+                .form {
+                    p {
+                        margin-bottom: 5px;
+                        font-family: inherit;
+                        font-size: inherit;
+                        line-height: 18px;
+                        text-align: center;
+                        a {
+                            display: inline-block;
+                            font-size: 21px;
+                            color: $white;
+                        }
+                        a.forgot-pwd:hover {
+                            text-decoration: underline;
+                        }
+                        &.failed {
+                            color: $red;
+                        }
+                        &.space {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    &.login {
+                        text-align: left;
+                        p {
+                            span {
+                                color: $color13;
+                            }
+                            &.note {
+                                font-family: $font1;
+                                font-size: 22px;
+                                line-height: 26px;
+                                padding-left: 20px;
+                                max-width: 360px;
+                                margin: 0 auto;
+                                text-align: left;
+                            }
+                            &.space {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+                .sod_select {
+                    .sod_placeholder {
+                        color: #aaa;
+                    }
+                }
+            }
+        }   
+    }
+    &.modal-hidden {
+        display: none;
+    }
+}
+
+.act-modal {
+    p {
+        font-size: 22px!important;
+        line-height: 28px!important;
+        &.modal-subtitle {
+            margin-bottom: 10px!important;
+        }
+        &.caution {
+            padding-top: 10px!important;
+            font-size: 16px!important;
+            color: $color3!important;
+        }
+        &.act-title {
+            color: $color3!important;
+        }
+    }
+}
+
+.act-tel {
+    margin: 10px 0 !important;
+}
+
+.msie input[type="password"] {
+    color: #ccc;
+}
+
+.headline {
+	.row {
+		.head {
+			text-align: center;
+			font-family: $font1;
+			font-size: 50px;
+            font-weight: normal;
+			color: $white;
+            text-transform: uppercase;
+		}
+	}
+}
+
+.register-head {
+    position: relative;
+    max-height: 165px;
+    text-align: left;
+    picture {
+        img {
+            width: 100%;
+        }
+    }
+    .header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        .title {
+            margin-top: 60px;
+            span {
+                margin-left: 80px;
+                margin-right: 10px;
+                padding: 0 20px;
+                display: inline-block;
+                font-size: 50px;
+                line-height: 65px;
+                background-color: $color11;
+                color: $white;
+                @include radius(5px);
+            }
+            h1 {
+                margin-top: 0;
+                vertical-align: top;
+                display: inline-block;
+                font-family: $font1;
+                font-size: 36px;
+                line-height: 73px;
+                color: $color1;
+            }
+            &.no-span {
+                margin-left: 80px;
+            }
+        }
+    }
+}
+
+.register {
+	.row {
+        .content {
+            .feature-img {
+                .curve {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 25px;
+                    background-color: $white;
+                    -moz-border-radius-topleft: 50px 25px;
+                    border-top-left-radius: 50% 25px;
+                    -moz-border-radius-topright: 50px 25px;
+                    border-top-right-radius: 50% 25px;
+                }
+            }
+            form {
+                .detail {
+                    padding-left: 80px;
+                    padding-right: 80px;
+                    background-color: $white;
+                    p {
+                        label {
+                            margin-left: 0;
+                            margin-right: 5px;
+                        }
+                        &.label {
+                            background-color: transparent;
+                        }
+                    }
+                    .agree {
+                        .column {
+                            text-align: left;
+                            label {
+                                margin-right: 10px;
+                                vertical-align: top;
+                            }
+                            input {
+                                display: inline-block;
+                                margin-top: 7px;
+                                margin-right: 5px;
+                                vertical-align: top;
+                            }
+                            .desc {
+                                display: inline-block;
+                                text-align: left;
+                                p {
+                                    color: $color12;
+                                    margin: 0;
+
+                                }
+                            }
+                            .captcha {
+                                margin: 10px 0;
+                                .security {
+                                    display: inline-block;
+                                    padding: 0 50px;
+                                    background-color: $color22;
+                                    color: $color11;
+                                    letter-spacing: 10px;
+                                    font-size: 50px;
+                                }
+                            }
+                            .btn-submit {
+                                input[type="text"] {
+                                    margin-bottom: 0;
+                                    width: 300px;
+                                    border: 2px solid $color11;
+                                    box-shadow: none;
+                                    color: $color11;
+                                    @include radius(5px);
+                                }
+                                a {
+                                    text-align: center;
+                                    clear: both;
+                                    display: inline-block;
+                                    margin-top: 6px;
+                                    padding-top: 8px;
+                                    padding-bottom: 8px;
+                                    background-color: $color1;
+                                    font-family: $font1;
+                                    font-size: 21px;
+                                    line-height: 21px;
+                                    @include radius(5px);
+                                }
+                            }
+                        }
+                    }
+                    fieldset {
+                        padding: 0;
+                        margin-bottom: 0;
+                        .row {
+                            .large-5 {
+                                width: 43.66667%;
+                            }
+                            .large-7 {
+                                width: 56.33333%;
+                            }
+                            label {
+                                font-size: 18px;
+                                span {
+                                    display: inline-block;
+                                    float: right;
+                                    font-size: 22px;
+                                    color: $red;
+                                }
+                            }
+                            div.column {
+                                margin-bottom: 7px;
+                                input[type="text"] {
+                                    margin-bottom: 0;
+                                    width: 450px;
+                                    border: 2px solid $color11;
+                                    box-shadow: none;
+                                    color: $black;
+                                    @include radius(5px);
+                                    &#firstname-en {
+                                        text-transform: uppercase;
+                                    }
+                                    &#lastname-en {
+                                        text-transform: uppercase;
+                                    }
+                                }
+                                input[type="radio"] {
+                                    vertical-align: middle;
+                                    background-color: $color1;
+                                    cursor: pointer;
+                                    display: inline-block;
+                                    height: 20px;
+                                    margin-right: 5px;
+                                    margin-bottom: 0;
+                                    position: relative;
+                                    width: 20px;
+                                    -webkit-appearance: none;
+                                    @include radius(50%);
+                                }
+                                input[type="radio"]:checked:after {
+                                    background-color: $white;
+                                }
+                                .icon-reg-datepicker {
+                                    position: absolute;
+                                    top: 2px;
+                                    left: 425px;
+                                    pointer-events: none;
+                                    font-size: 32px;
+                                    line-height: 32px;
+                                    color: $color11;
+                                }
+                                .dropdown {
+                                    .row {
+                                        .columns {
+                                            margin-left: 0;
+                                            margin-right: 0;
+                                            select, .selectordie-wrap {
+                                                width: 450px;
+                                                padding: 0 0.5rem;
+                                                margin-bottom: 0;
+                                                font-family: $font1;
+                                                font-size: 20px;
+                                                line-height: 30px;
+                                                border: 2px solid $white;
+                                                background-color: $white;
+                                                color: $color1;
+                                                @include radius(5px);
+                                            }
+                                            .selectordie-wrap {
+                                                padding: 0;
+                                                border: 0;
+                                                border-radius: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                                .career-etc {
+                                    margin-top: 7px;
+                                    display: none;
+                                }
+                                label {
+                                    vertical-align: middle;
+                                }
+                            }
+                            &.member-id {
+                                display: none;
+                                background-color: $color8;
+                                margin-left: 0;
+                                margin-right: 0;
+                                margin-bottom: 30px;
+                                padding: 20px 0;
+                                @include radius(5px);
+                                label {
+                                    line-height: 35px;
+                                }
+                                div {
+                                    &.column {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    h3 {
+                        margin-top: 0;
+                        padding-top: 20px;
+                        font-family: $font1;
+                        font-size: 30px;
+                        color: $color18;
+                    }
+                    p {
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                        font-size: 18px;
+                        color: $color18;
+                        span {
+                            color: $color1;
+                            &.red {
+                                color: $red;
+                            }
+                        }
+                    }
+                    .space {
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+            .address {
+                position: relative;
+                padding-bottom: 60px;
+                background-color: $color8;
+                .curve {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 25px;
+                    background-color: $white;
+                    -moz-border-radius-bottomleft: 50px 25px;
+                    border-bottom-left-radius: 50% 25px;
+                    -moz-border-radius-bottomright: 50px 25px;
+                    border-bottom-right-radius: 50% 25px;
+                }
+                h3 {
+                    padding: 60px 80px 20px;
+                    margin-top: 0;
+                    font-family: $font1;
+                    font-size: 30px;
+                    color: $color18;
+                    &.enewsletter {
+                        padding: 10px 40px 20px;
+                    }
+                }
+                p {
+                    padding-left: 80px;
+                    padding-right: 80px;
+                }
+                fieldset {
+                    padding-top: 0;
+                    padding-left: 80px;
+                    padding-right: 80px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    .row {
+                        .large-5 {
+                            width: 43.66667%;
+                        }
+                        .large-7 {
+                            width: 56.33333%;
+                        }
+                        label {
+                            font-size: 18px;
+                            span {
+                                display: inline-block;
+                                float: right;
+                                font-size: 22px;
+                                color: $red;
+                            }
+                        }
+                        div.column {
+                            input[type=text] {
+                                margin-bottom: 7px;
+                                width: 450px;
+                                background-color: $color8;
+                                border: 2px solid $color11;
+                                box-shadow: none;
+                                color: $black;
+                                @include radius(5px);
+                            }
+                        }
+                    }
+                }
+                .enews-box {
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    background-color: $white;
+                    @include radius(15px);
+                    p {
+                        padding-left: 40px;
+                        padding-right: 40px;
+                    }
+                    fieldset {
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        .row {
+                            div.column {
+                                input[type=text] {
+                                    background-color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.short {
+                    padding-bottom: 20px;
+                }
+            }
+            .referrer {
+                position: relative;
+                padding-bottom: 30px;
+                background-color: $white;
+                .curve {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 25px;
+                    background-color: $color8;
+                    -moz-border-radius-bottomleft: 50px 25px;
+                    border-bottom-left-radius: 50% 25px;
+                    -moz-border-radius-bottomright: 50px 25px;
+                    border-bottom-right-radius: 50% 25px;
+                }
+                .curve-down {
+                    position: absolute;
+                    bottom: -25px;
+                    width: 100%;
+                    height: 25px;
+                    background-color: $white;
+                    -moz-border-radius-bottomleft: 50px 25px;
+                    border-bottom-left-radius: 50% 25px;
+                    -moz-border-radius-bottomright: 50px 25px;
+                    border-bottom-right-radius: 50% 25px;
+                    z-index: 1;
+                }
+                h3 {
+                    padding: 60px 80px 20px;
+                    margin-top: 0;
+                    font-family: $font1;
+                    font-size: 30px;
+                    color: $color18;
+                    span {
+                        font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+                        font-size: 16px;
+                    }
+                }
+                fieldset {
+                    padding-top: 0;
+                    padding-left: 80px;
+                    padding-right: 80px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    .large-5 {
+                        width: 43.66667%;
+                    }
+                    .large-7 {
+                        width: 56.33333%;
+                    }
+                    label {
+                        font-size: 18px;
+                        span {
+                            display: inline-block;
+                            float: right;
+                            font-size: 22px;
+                            color: $red;
+                        }
+                    }
+                    div.column {
+                        input[type=text] {
+                            margin-bottom: 7px;
+                            width: 450px;
+                            background-color: $white;
+                            border: 2px solid $color11;
+                            box-shadow: none;
+                            color: $black;
+                            @include radius(5px);
+                        }
+                        .icon-home-register {
+                            position: absolute;
+                            top: -5px;
+                            left: 480px;
+                            font-size: 46px;
+                            color: $color11;
+                            border: 0;
+                        }
+                    }
+                }
+            }
+            .submit {
+                position: relative;
+                padding-top: 70px;
+                padding-bottom: 30px;
+                background-color: $color8;
+                -webkit-border-bottom-right-radius: 50px;
+                -webkit-border-bottom-left-radius: 50px;
+                -moz-border-radius-bottomright: 50px;
+                -moz-border-radius-bottomleft: 50px;
+                border-bottom-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+                .curve {
+                    position: absolute;
+                    top: -25px;
+                    width: 100%;
+                    height: 25px;
+                    background-color: $color8;
+                    -moz-border-radius-topleft: 50px 25px;
+                    border-top-left-radius: 50% 25px;
+                    -moz-border-radius-topright: 50px 25px;
+                    border-top-right-radius: 50% 25px;
+                }
+                .curve-down {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 25px;
+                    background-color: $white;
+                    -moz-border-radius-bottomleft: 50px 25px;
+                    border-bottom-left-radius: 50% 25px;
+                    -moz-border-radius-bottomright: 50px 25px;
+                    border-bottom-right-radius: 50% 25px;
+                    z-index: 1;
+                }
+                .submit-btn {
+                    .row {
+                        text-align: center;
+                        div.column {
+                            button[type=submit] {
+                                padding: 13px 20px 10px;
+                                background-color: $color1;
+                                border: 2px solid $color1;
+                                font-family: $font1;
+                                font-size: 26px;
+                                color: $white;
+                                line-height: 18px;
+                                letter-spacing: 0;
+                                box-shadow: none;
+                                @include radius(5px);
+                            }
+                            button[type=reset] {
+                                padding: 13px 20px 10px;
+                                background-color: transparent;
+                                border: 2px solid $color1;
+                                font-family: $font1;
+                                font-size: 26px;
+                                color: $color1;
+                                line-height: 18px;
+                                letter-spacing: 0;
+                                box-shadow: none;
+                                @include radius(5px);
+                            }
+                        }
+                        .center {
+                            text-align: center;
+                        }
+                    }
+                }
+                &.short {
+                    padding-top: 0;
+                }
+            }
+            .enter {
+                padding-top: 65px;
+            }
+            &:after {
+                content: " ";
+                display: table;
+                float: right;
+                margin-right: 150px;
+                margin-bottom: 30px;
+                background: url('../img/ft-about-apply.png');
+                width: 429px;
+                height: 183px;
+                position: relative;
+                top: -1px;
+            }
+        }
+	}
+}
+
+.form-ib {
+    display: inline-block;
+}
+
+.register .reg .row .content::after {
+    display: none;
+}
+
+.register .reg {
+    margin-top: 40px;
+}
+
+.register .submit button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.msie .more .row .more-promo .content::after,
+.msie .more .row .more-news .content::after,
+.msie .more .row .more-act .content::after {
+    position: relative;
+    top: -1px;
+}
+
+.modal-subtitle {
+    line-height: 1;
+    margin-bottom: 30px !important;
+}
+
+.reg-modal .content .inside input[type="text"],
+.reg-modal .content .inside input[type="password"],
+.reg-modal .content .inside textarea {
+
+    &::-webkit-input-placeholder {
+       color: #aaa;
+    }
+
+    &:-moz-placeholder {
+       color: #aaa;  
+    }
+
+    &::-moz-placeholder {
+       color: #aaa;  
+    }
+
+    &:-ms-input-placeholder {  
+       color: #aaa;  
+    }
+
+}
+
+.phoneform-wrap {
+    // overflow: hidden;
+    width: 450px;
+}
+
+.register .phone_country {
+    float: left;
+    width: 20%;
+    margin-bottom: 0px;
+    font-family: supermarketreg;
+    color: #2270BB;
+    vertical-align: middle;
+}
+
+.register #mobile {
+    float: right;
+    width: 79%;
+    vertical-align: middle;
+}
+
+.register-main {
+    select, .selectordie-wrap {
+        width: 450px;
+        padding: 0 0.5rem;
+        margin-bottom: 0;
+        font-family: $font1;
+        font-size: 20px;
+        line-height: 30px;
+        border: 2px solid $color17;
+        color: $color1;
+        @include radius(5px);
+    }
+    .selectordie-wrap {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 7px;
+
+        .sod_select {
+            background: transparent;
+            .sod_label {
+                color: #000;
+            }
+            .sod_placeholder {
+                color: #ccc;
+            }
+        }
+    }
+}
+
+.sod-contact {
+    width: 320px;
+    margin: auto;
+
+    .sod_select {
+        border: 0;
+    }
+
+    .sod_select .sod_list_wrapper {
+        border: 0;
+        margin-left: 0;
+    }
+}
+
+.register {
+    .sod_select .sod_list_wrapper {
+        max-height: 204px;
+        overflow-y: scroll;
+    }
+}
+
+.tooltiptext{
+    display: none;
+}
+
+@media only screen and (max-width: 40em) {
+    .contact textarea {
+        width: 100% !important;
+    }
+
+    .phoneform-wrap {
+        width: 100%;
+    }
+    .register-check-5-1 .reg-modal .content .inside .button {
+        width: 210px;
+    }
+    .reg-modal {
+        padding-left: 15px;
+        padding-right: 15px;
+        .exit {
+            top: 15px;
+            right: 15px;
+            z-index: 1;
+        }
+        .content {
+            &.sm-scroll {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow-y: scroll;
+            }
+            .inside {
+                h3 {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    font-size: 36px;
+                    line-height: 1;
+                }
+                p {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .button {
+                    &.cancel-modal {
+                        margin-left: -5px;
+                    }
+                }
+                input[type="text"], input[type="password"] {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+                input[type="text"][disabled] {
+                    color: $black;
+                }
+                .line {
+                    width: 100%;
+                    border-top: 1px solid #fff;
+                    margin-bottom: 20px;
+                }
+                &.contact {
+                    .column {
+                            margin: 0;
+                            padding: 0;
+                        }
+                    .form {
+                        
+                        p {
+                            /*padding-left: 15px;
+                            padding-right: 15px;*/
+                            margin-left: 15px;
+                            margin-right: 15px;
+                        }
+                        &.login {
+                            p {
+                                &.note {
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                    }
+                    .button {
+                        &.cancel-modal {
+                            margin-left: 0;
+                        }
+                    }
+                }
+                &.password-confirm {
+                    .button {
+                        &.enter-modal {
+                            margin-top: 0;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .register-head {
+        max-height: 170px;
+        .header {
+            margin: 0;
+            .title {
+                margin-top: 30px;
+                text-align: center;
+                h1 {
+                    display: block;
+                }
+                span {
+                    margin: 0;
+                }
+                &.no-span {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .register {
+        .row {
+            .content {
+                .feature-img {
+                    .curve {
+                        display: inherit;
+                    }
+                }
+                form {
+                    .detail {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        fieldset {
+                            .row {
+                                padding-bottom: 10px;
+                                .large-5 {
+                                    width: 100%;
+                                }
+                                .large-7 {
+                                    width: 100%;
+                                }
+                                label {
+                                    span {
+                                        float: none;
+                                        padding-left: 5px;
+                                    }
+                                }
+                                div.column {
+                                    input[type="text"] {
+                                        width: 100%;
+                                    }
+                                    .dropdown {
+                                        .row {
+                                            .columns {
+                                                select, .selectordie-wrap {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .icon-reg-datepicker {
+                                        left: inherit;
+                                        right: 25px;
+                                    }
+                                }
+                            }
+                        }
+                        .agree {
+                            .column {
+                                .btn-submit {
+                                    input[type="text"] {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .address {
+                    p {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                    h3 {
+                        padding: 60px 30px 20px;
+                    }
+                    h3.enewsletter {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-bottom: 5px;
+                    }
+                    fieldset {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        .row {
+                            padding-bottom: 10px;
+                            .large-5 {
+                                width: 100%;
+                            }
+                            .large-7 {
+                                width: 100%;
+                            }
+                            label {
+                                span {
+                                    float: none;
+                                    padding-left: 5px;
+                                }
+                            }
+                            div.column {
+                                input[type="text"] {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .enews-box {
+                    margin-left: 0!important;
+                    margin-right: 0!important;
+                    p {
+                        padding-left: 30px!important;
+                        padding-right: 30px!important;
+                    }
+                    fieldset {
+                        padding-left: 30px!important;
+                        padding-right: 30px!important;
+                    }
+                    .enewsletter {
+                        h3 {
+                            padding-left: 30px;
+                            padding-right: 30px;
+                        }
+                        p {
+                            padding-left: 30px;
+                            padding-right: 30px;
+                        }
+                        fieldset {
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            .row {
+                                .large-5 {
+                                    width: 100%;
+                                }
+                                .large-7 {
+                                    width: 100%;
+                                }
+                                div.column {
+                                    input[type="text"] {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .referrer {
+                    h3 {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                    p {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                    fieldset {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        .row {
+                            .large-5 {
+                                width: 100%;
+                            }
+                            .large-7 {
+                                width: 100%;
+                            }
+                            div.column {
+                                padding-right: 60px;
+                                input[type="text"] {
+                                    width: 100%;
+                                }
+                                .icon-home-register {
+                                    right: 0;
+                                    left: inherit;
+                                }
+
+                            }
+                        }
+                    }
+                }
+                .submit {
+                    .submit-btn {
+                        .row.row.row.row {
+                            margin-left: 0;
+                            margin-right: 0;
+
+                            button {
+                                display: block;
+                                margin: auto;
+                                width: 220px;
+                                margin-bottom: 20px;
+                            }
+
+                            button[type="reset"]:last-child {
+                                width: 220px;
+                            }
+                        }
+                    }
+                }
+                &:after {
+                    content: " ";
+                    display: table;
+                    float: right;
+                    margin-right: 50px;
+                    margin-bottom: 30px;
+                    background: url('../img/ft-register-s.png');
+                    width: 219px;
+                    height: 94px;
+                }
+            }
+        }
+    }
+
+    .register-main .register .row .content .submit .submit-btn .row.row.row.row button {
+        width: 220px;
+    }
+    .register-main select,
+    .selectordie-wrap {
+        width: 100%!important;
+    }
+
+    .register-head .header .title h1 {
+        font-size: 32px;
+    }
+
+    .register .row .content .feature-img .curve {
+        height: 15px;
+        -moz-border-top-left-radius: 50% 15px;
+        border-top-left-radius: 50% 15px;
+        -moz-border-top-right-radius: 50% 15px;
+        border-top-right-radius: 50% 15px;
+    }
+
+    .register .row .content .address .curve,
+    .register .row .content .referrer .curve,
+    .register .row .content .referrer .curve-down
+    {
+        height: 15px;
+        -moz-border-bottom-left-radius: 50% 15px;
+        border-bottom-left-radius: 50% 15px;
+        -moz-border-bottom-right-radius: 50% 15px;
+        border-bottom-right-radius: 50% 15px;
+    }
+
+    .register .row .content .referrer .curve-down {
+        bottom: -15px;
+    }
+
+    .register .row .content .submit {
+        -moz-border-bottom-right-radius: 50px 15px;
+        border-bottom-right-radius: 50px 15px;
+        -moz-border-bottom-left-radius: 50px 15px;
+        border-bottom-left-radius: 50px 15px;
+    }
+
+    .register .row .content form .detail .agree .column label {
+        float: left;
+        margin-left: 0;
+    }
+
+    .register .row .content form .detail .agree .column .desc {
+        display: inline;
+    }
+
+    .register .phone_country {
+        width: 30%;
+    }
+
+    .register #mobile {
+        width: 69%;
+    }
+
+    .contact .sod-contact {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 10px;
+        width: 320px !important;
+    }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .more .row .more-promo .row .head h2,
+    .more .row .more-news .row .head h2,
+    .more .row .more-act .row .head h2 {
+        font-size: 32px;
+    }
+
+    .register-head {
+        max-height: 140px;
+        .header {
+            .title {
+                margin-top: 35px;
+                span {
+                     margin-left: 40px;
+                }
+                &.no-span {
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+    .register {
+        .row {
+            .content {
+                form {
+                    .detail {
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        fieldset {
+                            .row {
+                                div.column {
+                                    input[type="text"] {
+                                        width: 100%;
+                                    }
+                                    .dropdown {
+                                        .row {
+                                            .columns {
+                                                select, .selectordie-wrap {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .icon-reg-datepicker {
+                                        left: inherit;
+                                        right: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .address {
+                    h3 {
+                        padding: 60px 40px 20px;
+                        &.enewsletter {
+                            padding: 60px 40px 20px;
+                        }
+                    }
+                    p {
+                        padding-left: 40px;
+                        padding-right: 40px;
+                    }
+                    fieldset {
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        .row {
+                            div.column {
+                                input[type="text"] {
+                                    width: 100%;
+                                }
+                                .dropdown {
+                                    .row {
+                                        .columns {
+                                            select {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .enews-box {
+                    margin-left: 0!important;
+                    margin-right: 0!important;
+                    .enewsletter {
+                        h3 {
+                            padding: 60px 40px 20px;
+                        }
+                        p {
+                            padding-left: 40px;
+                            padding-right: 40px;
+                        }
+                        fieldset {
+                            padding-left: 40px;
+                            padding-right: 40px;
+                            .row {
+                                div.column {
+                                    input[type="text"] {
+                                        width: 100%;
+                                    }
+                                    .dropdown {
+                                        .row {
+                                            .columns {
+                                                select {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .referrer {
+                    h3 {
+                        padding: 60px 40px 20px;
+                    }
+                    fieldset {
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        .row {
+                            div.column {
+                                padding-right: 60px;
+                                input[type="text"] {
+                                    width: 100%;
+                                }
+                                .icon-home-register {
+                                    left: inherit;
+                                    right: 0;
+                                }
+                                .dropdown {
+                                    .row {
+                                        .columns {
+                                            select {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .submit {
+                    .submit-btn {
+                        .row {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about-head {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .phoneform-wrap {
+        width: 100%;
+    }
+
+    .register .phone_country {
+        width: 20%;
+    }
+
+    .register #mobile {
+        width: 79%;
+    }
+
+    .register-main select,
+    .selectordie-wrap {
+        width: 100%!important;
+    }
+}
+
+.contact .sod-contact {
+    padding: 0;
+    margin-top: 5px;
+    width: 320px !important;
+}
+
+@media only screen and (max-width: 40em) {
+    .contact .sod-contact {
+        width: 100% !important;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 10px;
+    }
+}

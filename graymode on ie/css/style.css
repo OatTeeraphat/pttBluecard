@@ -1,0 +1,12 @@
+.fullWidth .rsOverflow .rsContainer .rsSlide .rsContent .curve{
+    background-color: #656565;
+}
+.spec-slider .row .desc .owl-carousel .owl-item .item .title a p{
+    color: #fff !important;
+}
+
+.spec-slider .row .desc .owl-carousel .owl-item .item .title a span{
+	 color: #fff !important;
+	 border-color: #fff !important;
+}
+/*end of file style.css*/

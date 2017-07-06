@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'db_helvethaica_bold';
+    src: url('../fonts/huawei/DB Helvethaica X Bd v3.2.eot');
+    src: url('../fonts/huawei/DB Helvethaica X Bd v3.2.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/huawei/DB Helvethaica X Bd v3.2.woff2') format('woff2'),
+         url('../fonts/huawei/DB Helvethaica X Bd v3.2.woff') format('woff'),
+         url('../fonts/huawei/DB Helvethaica X Bd v3.2.ttf') format('truetype'),
+         url('../fonts/huawei/DB Helvethaica X Bd v3.2.svg#db_helvethaicamon_x75_bd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'db_helvethaica_regular';
+    src: url('../fonts/huawei/DB Helvethaica X v3.2.eot');
+    src: url('../fonts/huawei/DB Helvethaica X v3.2.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/huawei/DB Helvethaica X v3.2.woff2') format('woff2'),
+         url('../fonts/huawei/DB Helvethaica X v3.2.woff') format('woff'),
+         url('../fonts/huawei/DB Helvethaica X v3.2.ttf') format('truetype'),
+         url('../fonts/huawei/DB Helvethaica X v3.2.svg#db_helvethaicamon_x55_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.rotate {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.rotate.active {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.row{max-width: 1200px;}
+.nav-fixed .top-bar{background: #f4f7f8;}
+.wraper{padding-top: 105px;}
+.BlueluckydrawVol2-top{position: relative;display:table;vertical-align: middle;width: 100%;background: url('../img/blueluckydrawvol2/BlueluckydrawVol_Bg.jpg') no-repeat #000;min-height: calc(100vh);background-position: top -45px left;background-size: 700px;overflow: hidden!important;}
+.BlueluckydrawVol2-top .nav-up{padding: 0;color: #2270bb;cursor: pointer;position: absolute;bottom: 15px;left: 0;right: 0;}
+.BlueluckydrawVol2-top .nav-up p{margin: 0;font-family: 'supermarketreg';font-size: 1.5em;}
+.BlueluckydrawVol2-top .nav-up img{padding: 2px;width: 30px;}
+.BlueluckydrawVol2-top .nav-up a{color: #2270bb;}
+.BlueluckydrawVol2-top .nav-up a:focus.BlueluckydrawVol2-top,.nav-up a:hover{color: #2270bb;}
+.BlueluckydrawVol2-top .nav-up:hover img{box-sizing: border-box;}
+.item-middle{margin-top: 245px;margin-bottom: 200px;}
+.BlueluckydrawVol2-text img.main-text{width: 120%;max-width: 120%;margin-left: -10%;}
+.BlueluckydrawVol2-text{position: relative;font-size: 3.45vw;display: table-cell;vertical-align: middle;}
+.BlueluckydrawVol2-text h3{font-family:'db_helvethaica_regular';font-size: 2em;color: #fff;line-height: 1.125em;padding: 0 0 25px 5px;letter-spacing: 0;text-transform: uppercase;}
+.BlueluckydrawVol2-text h3 img{width:inherit;height: 0.85em;margin: -3px 0px 0;}
+
+.BlueluckydrawVol2-text p{font-family:'db_helvethaica_regular';font-size: 1.7em;letter-spacing: 1px;line-height: 1.175em;padding: 0 15px 0 5px;margin: 0;color: #fff;}
+.BlueluckydrawVol2-text p.blue{color: #02aff2;}
+.BlueluckydrawVol2-text p a{color: #fff;cursor: pointer;transition: all 0.25s ease;}
+.BlueluckydrawVol2-text p a:hover,.BlueluckydrawVol2-text p a:focus{color: #02aff2;}
+.BlueluckydrawVol2-text p span {position: relative;top: 3px;margin-left: -4.75%;color: #fff;}
+.BlueluckydrawVol2-text p span.date {margin: 0;font-size: 0.9em;}
+.BlueluckydrawVol2-button {width: 100%;padding: 3vh 8.5% 0;position: absolute;z-index: 10;text-align: center;}
+.BlueluckydrawVol2-button a.button{display: inline-block;margin-top: 25px;margin-right: 10px;font-family: supermarketreg;border-radius: 5px;font-size: 21px;background-color: #2270bb;padding: 5px 10px;text-align: center;width: 45%;max-width: 175px;white-space: nowrap;}
+.BlueluckydrawVol2-button a.button:hover,.BlueluckydrawVol2-button a.button:focus{background-color: #fff;color:#2270bb;}
+.BlueluckydrawVol2-button a.button.white{background-color: #fff;color:#2270bb;}
+.BlueluckydrawVol2-button a.button.white:hover,.BlueluckydrawVol2-button a.button.white:focus{background-color: #2270bb;color:#fff;}
+
+.BlueluckydrawVol2-term{background: #000;color: #fff;position: relative;height: 0;transition: all 0.33s ease-in-out;overflow: hidden;}
+.BlueluckydrawVol2-term.open{opacity:1;height: 2220px;}
+.BlueluckydrawVol2-term .columns.contents{background: #1a1a1a;padding: 5% 15px;margin: 0 auto 60px;border-radius: 10px;font-size: 0.95em;}
+.BlueluckydrawVol2-term p {margin: 10px 0 0;font-size: 1em;}
+.BlueluckydrawVol2-term ol {counter-reset: item;margin: 0;font-size: 1em;}
+.BlueluckydrawVol2-term li { display: block; }
+.BlueluckydrawVol2-term ol > li{margin: 15px 0 !important;}
+.BlueluckydrawVol2-term ol > li > ol > li{margin: 0 !important;}
+.BlueluckydrawVol2-term ul{margin:0;font-size: 1em;}
+.BlueluckydrawVol2-term ol > li:before {content: counters(item, ".") ". ";counter-increment: item;position: absolute;left: -30px;}
+.BlueluckydrawVol2-term-list{position: relative;margin: 0 0 0 35px;font-size: 1em;}
+
+
+
+@media screen and (min-width: 360px){
+    .BlueluckydrawVol2-term.open{opacity:1;height: 2150px;}
+}
+
+@media screen and (min-width: 375px){
+    .BlueluckydrawVol2-term.open{opacity:1;height: 2000px;}
+}
+
+@media screen and (min-width: 410px){
+    .BlueluckydrawVol2-term.open{opacity:1;height: 1890px;}
+}
+
+@media screen and (min-width: 640px){
+    .BlueluckydrawVol2-text img.main-text{width: 120%;max-width: 100%;margin-left: 0;}
+    .wraper{padding-top: 80px;}
+    .item-middle{display: table;height: 45vh;min-height: 415px;margin: 0;}
+    .BlueluckydrawVol2-top{height: calc(100vh - 384px);min-height: 575px;background-position: top 15% left 60%;background-size: 150%;}
+    .BlueluckydrawVol2-text{font-size: 0.65em;padding-left: 0;}
+    .BlueluckydrawVol2-text h3{padding: 0 15px 0 8.75%;}
+    .BlueluckydrawVol2-text p{padding: 15px 15px 0 8.75%;}
+    .BlueluckydrawVol2-top .nav-up{bottom: 30px;}
+    .BlueluckydrawVol2-top .nav-up img{width: 30px;padding: 5px;}
+    .BlueluckydrawVol2-button{text-align: left;}
+    .BlueluckydrawVol2-term{font-size: 1em;}
+    .BlueluckydrawVol2-term .columns.contents{padding: 5% 45px;}
+    .BlueluckydrawVol2-term ol > li:before {left: -60px;}
+    .BlueluckydrawVol2-term-list{position: relative;margin: 15px 0 0 65px;}
+    .BlueluckydrawVol2-term.open{height: 1550px;}
+}
+
+@media screen and (min-width: 1025px){
+    .wraper{padding-top: 100px;}
+    .item-middle{height: 85vh;}
+    .BlueluckydrawVol2-top{background-size: 110%;background-position: top 25% right;height: calc(100vh + 10vh + 90px);}
+    .BlueluckydrawVol2-text{padding-left: 15px;font-size: 1em;}
+    .BlueluckydrawVol2-text h3{letter-spacing: 1px;font-size: 1.75em;}
+    .BlueluckydrawVol2-text h3 img{width:inherit;height: 1em;margin: -3px 0px 0;}
+    .BlueluckydrawVol2-text p{letter-spacing: 1px;}
+    .BlueluckydrawVol2-button{padding: 13vh 0 0 8.5%; font-size: 1.2em; width: 90%;}
+    .BlueluckydrawVol2-button a{font-size: 1.33em !important;}
+    .BlueluckydrawVol2-term{font-size: 1.2em;}
+    .BlueluckydrawVol2-top .nav-up img{width: 60%;text-align: center;}
+    .BlueluckydrawVol2-term-list{position: relative;margin: 15px 15px 0 65px;}
+    .BlueluckydrawVol2-term.open{height: 1750px;}
+
+}
+
+@media screen and (min-width: 1441px){
+    .row{max-width: 1440px;}
+    .wraper{padding-top: 100px;}
+    .BlueluckydrawVol2-top{background-size: 105%;height: calc(100vh + 100px);}
+    .BlueluckydrawVol2-button {width: 100%;padding: 15px 8.5% 0;position: absolute;z-index: 10;}
+    .BlueluckydrawVol2-top .nav-up{bottom: 30px;}
+    .BlueluckydrawVol2-text{padding-left: 3vw;font-size: 1.2em;}
+}
